@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # to: 代表forward到topics_controller的welcome method
   get 'welcome', to: 'topics#welcome'
 
+  # 設定首頁為 http://localhost:3000/topics
+  root 'topics#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
