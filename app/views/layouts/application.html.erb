@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<!--修改你的 app/views/layout/application.html.erb-->
+  <%= render "common/navbar" %>
+  <%= yield %>
 </body>
+  <%= render "common/footer" %>
 </html>
