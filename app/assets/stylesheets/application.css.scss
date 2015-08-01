@@ -13,4 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+/*
+ * 把 app/assets/stylesheets/application.css 更名為 app/assets/stylesheets/application.css.scss
+ * mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss
+*/
 @import "bootstrap";
