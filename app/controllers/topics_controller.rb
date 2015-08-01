@@ -1,6 +1,11 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
 
+  # Step1: 插入method welocme
+  def welcome
+
+  end
+
   # GET /topics
   # GET /topics.json
   def index

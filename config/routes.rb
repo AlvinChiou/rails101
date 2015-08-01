@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   resources :topics
+
+  # Step2: 設定 routes，get表是接收HTTP GET
+  # request mapping 'welcome'
+  # to: 代表forward到topics_controller的welcome method
+  get 'welcome', to: 'topics#welcome'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
